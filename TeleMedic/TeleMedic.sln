@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic", "TeleMedic\Tele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic.Ambulance", "TeleMedic.Ambulance\TeleMedic.Ambulance.csproj", "{88540DC2-ECC1-4690-9163-596A91A31450}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic.Core", "TeleMedic.Core\TeleMedic.Core.csproj", "{FC23840C-91C2-4803-9ACF-C077B1DF1535}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic.Library", "TeleMedic.Library\TeleMedic.Library.csproj", "{CFF948FA-4218-4FC9-80C2-293839BCA1F1}"
 EndProject
 Global
@@ -35,14 +33,6 @@ Global
 		{88540DC2-ECC1-4690-9163-596A91A31450}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88540DC2-ECC1-4690-9163-596A91A31450}.Release|x86.ActiveCfg = Release|Any CPU
 		{88540DC2-ECC1-4690-9163-596A91A31450}.Release|x86.Build.0 = Release|Any CPU
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|x86.ActiveCfg = Debug|Win32
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|x86.Build.0 = Debug|Win32
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|x86.ActiveCfg = Release|Win32
-		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|x86.Build.0 = Release|Win32
 		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Debug|x86.ActiveCfg = Debug|Any CPU

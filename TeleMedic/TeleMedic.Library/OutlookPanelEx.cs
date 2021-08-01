@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace TeleMedic.Library
 {
-	public partial class OutlookPanelEx : Panel
+    public partial class OutlookPanelEx : Panel
 	{
 		int _headerHeight = 25;
 		string _headerText = "header title";

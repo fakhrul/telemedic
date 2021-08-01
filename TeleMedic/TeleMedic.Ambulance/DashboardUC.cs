@@ -41,6 +41,7 @@ namespace TeleMedic.Ambulance
             //RTC.Init();
             InitializeComponent();
 
+            chatUC1.OnMessageSend += ChatUC1_OnMessageSend;
             this.mainRtc = mainRtc;
             this.cam1Rtc = cam1Rtc;
             this.cam2Rtc = cam2Rtc;
@@ -51,6 +52,11 @@ namespace TeleMedic.Ambulance
             InitializeMainRtc();
             InitializeCam1Rtc();
             InitializeCam2Rtc();
+        }
+
+        private void ChatUC1_OnMessageSend(object sender, ChatMessageEventArgs e)
+        {
+            mainRtc.SendMessageToMeeting(e.Message);
         }
 
         private void InitializeCam1Rtc()
@@ -196,23 +202,8 @@ namespace TeleMedic.Ambulance
 
         private void ProcessChatMessage(string fromUser, string message)
         {
-            string[] messages = message.Split('|');
-            if (messages.Length > 1 && messages[messages.Length - 1] == "messageCode")
-            {
-
-            }
-            else
-            {
-                if (fromUser != mainRtc.MyUserName)
-                    htmlChatBox.Text = htmlChatBox.GetHtml() + "<div style='background-color:#C4E6F7; margin-left:5px'>" + fromUser +
-                                 "<br/>" + message + "</div>";
-                else
-                    htmlChatBox.Text = htmlChatBox.GetHtml() + "<div style='background-color:#DCF2FA; margin-left:10px'>" + fromUser +
-                                 "<br/>" + message + "</div>";
-
-                // Return focus to message text box
-                txtMsg.Focus();
-            }
+            chatUC1.ProcessMessage(mainRtc.MyUserName, fromUser, message);
+           
         }
 
         private void mainRtc_NewDevices(object sender, DeviceEventArgs e)
@@ -351,10 +342,10 @@ namespace TeleMedic.Ambulance
 
         }
 
-        private void btnSendMessage_Click(object sender, EventArgs e)
-        {
-            mainRtc.SendMessageToMeeting(txtMsg.Text);
-        }
+        //private void btnSendMessage_Click(object sender, EventArgs e)
+        //{
+        //    mainRtc.SendMessageToMeeting(txtMsg.Text);
+        //}
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
@@ -369,10 +360,10 @@ namespace TeleMedic.Ambulance
             cam2Rtc.LeaveMeeting();
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
-        {
-            mainRtc.SendMessageToMeeting(txtMsg.Text);
-        }
+        //private void btnSend_Click(object sender, EventArgs e)
+        //{
+        //    mainRtc.SendMessageToMeeting(txtMsg.Text);
+        //}
 
         private void btnStart_Click(object sender, EventArgs e)
         {

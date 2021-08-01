@@ -26,6 +26,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -81,6 +82,12 @@
     <Compile Include="BingMap.xaml.cs">
       <DependentUpon>BingMap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChatUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatUC.Designer.cs">
+      <DependentUpon>ChatUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComboboxItem.cs" />
     <Compile Include="CurrentParticipant.cs" />
     <Compile Include="Helper.cs" />
@@ -106,9 +113,20 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChatUC.resx">
+      <DependentUpon>ChatUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OutlookPanelEx.resx">
       <DependentUpon>OutlookPanelEx.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlRenderer.Core">
+      <Version>1.5.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="HtmlRenderer.WinForms">
+      <Version>1.5.0.6</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

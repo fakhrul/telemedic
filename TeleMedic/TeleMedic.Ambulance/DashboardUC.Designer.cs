@@ -30,16 +30,8 @@ namespace TeleMedic.Ambulance
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.htmlChatBox = new TheArtOfDev.HtmlRenderer.WinForms.HtmlPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtMsg = new System.Windows.Forms.TextBox();
-            this.btnSend = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -59,109 +51,34 @@ namespace TeleMedic.Ambulance
             this.btnMute = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.bingMap1 = new TeleMedic.Library.BingMap();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.chatUC1 = new TeleMedic.Library.ChatUC();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.splitContainer1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(538, 657);
-            this.panel2.TabIndex = 1;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.flowLayoutPanel1);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.panel3);
-            this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(538, 657);
-            this.splitContainer1.SplitterDistance = 328;
-            this.splitContainer1.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(538, 328);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(205, 300);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.htmlChatBox);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(538, 254);
-            this.panel3.TabIndex = 1;
-            // 
-            // htmlChatBox
-            // 
-            this.htmlChatBox.AutoScroll = true;
-            this.htmlChatBox.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlChatBox.BaseStylesheet = null;
-            this.htmlChatBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.htmlChatBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.htmlChatBox.Location = new System.Drawing.Point(0, 0);
-            this.htmlChatBox.Name = "htmlChatBox";
-            this.htmlChatBox.Size = new System.Drawing.Size(538, 254);
-            this.htmlChatBox.TabIndex = 0;
-            this.htmlChatBox.Text = null;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txtMsg);
-            this.panel1.Controls.Add(this.btnSend);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 254);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(538, 71);
-            this.panel1.TabIndex = 0;
-            // 
-            // txtMsg
-            // 
-            this.txtMsg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMsg.Location = new System.Drawing.Point(0, 0);
-            this.txtMsg.Multiline = true;
-            this.txtMsg.Name = "txtMsg";
-            this.txtMsg.Size = new System.Drawing.Size(463, 71);
-            this.txtMsg.TabIndex = 1;
-            // 
-            // btnSend
-            // 
-            this.btnSend.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnSend.Location = new System.Drawing.Point(463, 0);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 71);
-            this.btnSend.TabIndex = 0;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // contextMenuStrip1
             // 
@@ -169,45 +86,9 @@ namespace TeleMedic.Ambulance
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Name = "splitContainer2";
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.elementHost1);
-            this.splitContainer2.Panel1.Controls.Add(this.button7);
-            this.splitContainer2.Panel1.Controls.Add(this.button8);
-            this.splitContainer2.Panel1.Controls.Add(this.button9);
-            this.splitContainer2.Panel1.Controls.Add(this.button10);
-            this.splitContainer2.Panel1.Controls.Add(this.button11);
-            this.splitContainer2.Panel1.Controls.Add(this.button12);
-            this.splitContainer2.Panel1.Controls.Add(this.btnCam1UnMuteAudio);
-            this.splitContainer2.Panel1.Controls.Add(this.btnCam1MuteAudio);
-            this.splitContainer2.Panel1.Controls.Add(this.btnCam1UnmuteVideo);
-            this.splitContainer2.Panel1.Controls.Add(this.btnCam1MuteVideo);
-            this.splitContainer2.Panel1.Controls.Add(this.btnCam1StopVideo);
-            this.splitContainer2.Panel1.Controls.Add(this.btnCam1StartVideo);
-            this.splitContainer2.Panel1.Controls.Add(this.btnUnmuteAudio);
-            this.splitContainer2.Panel1.Controls.Add(this.btnMuteAudio);
-            this.splitContainer2.Panel1.Controls.Add(this.btnLeave);
-            this.splitContainer2.Panel1.Controls.Add(this.btnUnmute);
-            this.splitContainer2.Panel1.Controls.Add(this.btnMute);
-            this.splitContainer2.Panel1.Controls.Add(this.btnStop);
-            this.splitContainer2.Panel1.Controls.Add(this.btnStart);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.panel2);
-            this.splitContainer2.Size = new System.Drawing.Size(1123, 657);
-            this.splitContainer2.SplitterDistance = 581;
-            this.splitContainer2.TabIndex = 3;
-            // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(446, 469);
+            this.button7.Location = new System.Drawing.Point(453, 177);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 50);
             this.button7.TabIndex = 18;
@@ -216,7 +97,7 @@ namespace TeleMedic.Ambulance
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(365, 469);
+            this.button8.Location = new System.Drawing.Point(372, 177);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 50);
             this.button8.TabIndex = 17;
@@ -225,7 +106,7 @@ namespace TeleMedic.Ambulance
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(284, 469);
+            this.button9.Location = new System.Drawing.Point(291, 177);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 50);
             this.button9.TabIndex = 16;
@@ -234,7 +115,7 @@ namespace TeleMedic.Ambulance
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(203, 469);
+            this.button10.Location = new System.Drawing.Point(210, 177);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 50);
             this.button10.TabIndex = 15;
@@ -243,7 +124,7 @@ namespace TeleMedic.Ambulance
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(122, 469);
+            this.button11.Location = new System.Drawing.Point(129, 177);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 50);
             this.button11.TabIndex = 14;
@@ -252,7 +133,7 @@ namespace TeleMedic.Ambulance
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(41, 469);
+            this.button12.Location = new System.Drawing.Point(48, 177);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 50);
             this.button12.TabIndex = 13;
@@ -261,7 +142,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnCam1UnMuteAudio
             // 
-            this.btnCam1UnMuteAudio.Location = new System.Drawing.Point(446, 401);
+            this.btnCam1UnMuteAudio.Location = new System.Drawing.Point(453, 109);
             this.btnCam1UnMuteAudio.Name = "btnCam1UnMuteAudio";
             this.btnCam1UnMuteAudio.Size = new System.Drawing.Size(75, 50);
             this.btnCam1UnMuteAudio.TabIndex = 12;
@@ -271,7 +152,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnCam1MuteAudio
             // 
-            this.btnCam1MuteAudio.Location = new System.Drawing.Point(365, 401);
+            this.btnCam1MuteAudio.Location = new System.Drawing.Point(372, 109);
             this.btnCam1MuteAudio.Name = "btnCam1MuteAudio";
             this.btnCam1MuteAudio.Size = new System.Drawing.Size(75, 50);
             this.btnCam1MuteAudio.TabIndex = 11;
@@ -281,7 +162,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnCam1UnmuteVideo
             // 
-            this.btnCam1UnmuteVideo.Location = new System.Drawing.Point(284, 401);
+            this.btnCam1UnmuteVideo.Location = new System.Drawing.Point(291, 109);
             this.btnCam1UnmuteVideo.Name = "btnCam1UnmuteVideo";
             this.btnCam1UnmuteVideo.Size = new System.Drawing.Size(75, 50);
             this.btnCam1UnmuteVideo.TabIndex = 10;
@@ -291,7 +172,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnCam1MuteVideo
             // 
-            this.btnCam1MuteVideo.Location = new System.Drawing.Point(203, 401);
+            this.btnCam1MuteVideo.Location = new System.Drawing.Point(210, 109);
             this.btnCam1MuteVideo.Name = "btnCam1MuteVideo";
             this.btnCam1MuteVideo.Size = new System.Drawing.Size(75, 50);
             this.btnCam1MuteVideo.TabIndex = 9;
@@ -301,7 +182,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnCam1StopVideo
             // 
-            this.btnCam1StopVideo.Location = new System.Drawing.Point(122, 401);
+            this.btnCam1StopVideo.Location = new System.Drawing.Point(129, 109);
             this.btnCam1StopVideo.Name = "btnCam1StopVideo";
             this.btnCam1StopVideo.Size = new System.Drawing.Size(75, 50);
             this.btnCam1StopVideo.TabIndex = 8;
@@ -311,7 +192,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnCam1StartVideo
             // 
-            this.btnCam1StartVideo.Location = new System.Drawing.Point(41, 401);
+            this.btnCam1StartVideo.Location = new System.Drawing.Point(48, 109);
             this.btnCam1StartVideo.Name = "btnCam1StartVideo";
             this.btnCam1StartVideo.Size = new System.Drawing.Size(75, 50);
             this.btnCam1StartVideo.TabIndex = 7;
@@ -321,7 +202,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnUnmuteAudio
             // 
-            this.btnUnmuteAudio.Location = new System.Drawing.Point(446, 320);
+            this.btnUnmuteAudio.Location = new System.Drawing.Point(453, 28);
             this.btnUnmuteAudio.Name = "btnUnmuteAudio";
             this.btnUnmuteAudio.Size = new System.Drawing.Size(75, 50);
             this.btnUnmuteAudio.TabIndex = 6;
@@ -331,7 +212,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnMuteAudio
             // 
-            this.btnMuteAudio.Location = new System.Drawing.Point(365, 320);
+            this.btnMuteAudio.Location = new System.Drawing.Point(372, 28);
             this.btnMuteAudio.Name = "btnMuteAudio";
             this.btnMuteAudio.Size = new System.Drawing.Size(75, 50);
             this.btnMuteAudio.TabIndex = 5;
@@ -341,7 +222,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnLeave
             // 
-            this.btnLeave.Location = new System.Drawing.Point(463, 586);
+            this.btnLeave.Location = new System.Drawing.Point(501, 29);
             this.btnLeave.Name = "btnLeave";
             this.btnLeave.Size = new System.Drawing.Size(75, 50);
             this.btnLeave.TabIndex = 4;
@@ -351,7 +232,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnUnmute
             // 
-            this.btnUnmute.Location = new System.Drawing.Point(284, 320);
+            this.btnUnmute.Location = new System.Drawing.Point(291, 28);
             this.btnUnmute.Name = "btnUnmute";
             this.btnUnmute.Size = new System.Drawing.Size(75, 50);
             this.btnUnmute.TabIndex = 3;
@@ -361,7 +242,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnMute
             // 
-            this.btnMute.Location = new System.Drawing.Point(203, 320);
+            this.btnMute.Location = new System.Drawing.Point(210, 28);
             this.btnMute.Name = "btnMute";
             this.btnMute.Size = new System.Drawing.Size(75, 50);
             this.btnMute.TabIndex = 2;
@@ -371,7 +252,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(122, 320);
+            this.btnStop.Location = new System.Drawing.Point(129, 28);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 50);
             this.btnStop.TabIndex = 1;
@@ -381,7 +262,7 @@ namespace TeleMedic.Ambulance
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(41, 320);
+            this.btnStart.Location = new System.Drawing.Point(48, 28);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 50);
             this.btnStart.TabIndex = 0;
@@ -389,51 +270,131 @@ namespace TeleMedic.Ambulance
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.chatUC1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(705, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(500, 925);
+            this.panel4.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.splitContainer3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(500, 925);
+            this.panel5.TabIndex = 5;
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.elementHost1);
+            this.splitContainer3.Size = new System.Drawing.Size(500, 925);
+            this.splitContainer3.SplitterDistance = 393;
+            this.splitContainer3.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.flowLayoutPanel1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(500, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(205, 300);
+            this.panel6.TabIndex = 6;
+            // 
             // elementHost1
             // 
-            this.elementHost1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.elementHost1.Location = new System.Drawing.Point(0, 0);
             this.elementHost1.Name = "elementHost1";
-            this.elementHost1.Size = new System.Drawing.Size(581, 298);
+            this.elementHost1.Padding = new System.Windows.Forms.Padding(5);
+            this.elementHost1.Size = new System.Drawing.Size(498, 391);
             this.elementHost1.TabIndex = 19;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.bingMap1;
+            // 
+            // chatUC1
+            // 
+            this.chatUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chatUC1.Location = new System.Drawing.Point(0, 0);
+            this.chatUC1.Name = "chatUC1";
+            this.chatUC1.Padding = new System.Windows.Forms.Padding(5);
+            this.chatUC1.Size = new System.Drawing.Size(498, 923);
+            this.chatUC1.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnLeave);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(500, 825);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(205, 100);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.btnStart);
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.btnCam1MuteVideo);
+            this.panel2.Controls.Add(this.btnStop);
+            this.panel2.Controls.Add(this.btnCam1UnmuteVideo);
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.btnCam1StopVideo);
+            this.panel2.Controls.Add(this.btnMute);
+            this.panel2.Controls.Add(this.btnCam1MuteAudio);
+            this.panel2.Controls.Add(this.button10);
+            this.panel2.Controls.Add(this.btnCam1StartVideo);
+            this.panel2.Controls.Add(this.btnUnmute);
+            this.panel2.Controls.Add(this.btnCam1UnMuteAudio);
+            this.panel2.Controls.Add(this.button11);
+            this.panel2.Controls.Add(this.btnUnmuteAudio);
+            this.panel2.Controls.Add(this.btnMuteAudio);
+            this.panel2.Controls.Add(this.button12);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(500, 300);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(205, 525);
+            this.panel2.TabIndex = 10;
             // 
             // DashboardUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.splitContainer2);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
             this.Name = "DashboardUC";
-            this.Size = new System.Drawing.Size(1123, 657);
-            this.panel2.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1205, 925);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Panel panel3;
-        private TheArtOfDev.HtmlRenderer.WinForms.HtmlPanel htmlChatBox;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtMsg;
-        private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Button btnUnmute;
         private System.Windows.Forms.Button btnMute;
         private System.Windows.Forms.Button btnStop;
@@ -455,5 +416,12 @@ namespace TeleMedic.Ambulance
         private System.Windows.Forms.Button btnCam1StartVideo;
         private System.Windows.Forms.Integration.ElementHost elementHost1;
         private Library.BingMap bingMap1;
+        private System.Windows.Forms.Panel panel4;
+        private Library.ChatUC chatUC1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

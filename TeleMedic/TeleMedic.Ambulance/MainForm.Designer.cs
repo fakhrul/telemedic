@@ -32,18 +32,20 @@ namespace TeleMedic.Ambulance
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.loginUC1 = new TeleMedic.Ambulance.LoginUC();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pnlViewer = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.loginUC1 = new TeleMedic.Ambulance.LoginUC();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.mainPanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -53,14 +55,14 @@ namespace TeleMedic.Ambulance
             this.settingToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1039, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1039, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.settingToolStripMenuItem.Text = "Setting";
             this.settingToolStripMenuItem.Click += new System.EventHandler(this.settingToolStripMenuItem_Click);
             // 
@@ -69,10 +71,17 @@ namespace TeleMedic.Ambulance
             this.mainPanel.Controls.Add(this.loginUC1);
             this.mainPanel.Controls.Add(this.tabControl1);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(0, 30);
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1039, 673);
+            this.mainPanel.Size = new System.Drawing.Size(1039, 653);
             this.mainPanel.TabIndex = 1;
+            // 
+            // loginUC1
+            // 
+            this.loginUC1.Location = new System.Drawing.Point(340, 43);
+            this.loginUC1.Name = "loginUC1";
+            this.loginUC1.Size = new System.Drawing.Size(880, 641);
+            this.loginUC1.TabIndex = 1;
             // 
             // tabControl1
             // 
@@ -131,20 +140,22 @@ namespace TeleMedic.Ambulance
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // loginUC1
+            // panel1
             // 
-            this.loginUC1.Location = new System.Drawing.Point(340, 43);
-            this.loginUC1.Name = "loginUC1";
-            this.loginUC1.Size = new System.Drawing.Size(880, 641);
-            this.loginUC1.TabIndex = 1;
+            this.panel1.Controls.Add(this.mainPanel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1039, 653);
+            this.panel1.TabIndex = 3;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 703);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -157,6 +168,7 @@ namespace TeleMedic.Ambulance
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +186,7 @@ namespace TeleMedic.Ambulance
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel2;
         private LoginUC loginUC1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
