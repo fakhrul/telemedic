@@ -74,6 +74,11 @@
     <Compile Include="DashboardUC.Designer.cs">
       <DependentUpon>DashboardUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="HL7\HL7Listener.cs" />
+    <Compile Include="HL7\Message.cs" />
+    <Compile Include="HL7\Publisher.cs" />
+    <Compile Include="HL7\Segment.cs" />
+    <Compile Include="HL7\Subscriber.cs" />
     <Compile Include="LobbyUC.cs">
       <SubType>UserControl</SubType>
     </Compile>

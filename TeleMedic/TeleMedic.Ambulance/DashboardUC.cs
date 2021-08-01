@@ -29,6 +29,8 @@ namespace TeleMedic.Ambulance
 
         public event EventHandler<EventArgs> OnLeaveMeeting;
 
+        HL7Listener _hl7;
+
         public DashboardUC()
             :this(new RTCControl(), new RTCControl(), new RTCControl())
         {
@@ -52,6 +54,15 @@ namespace TeleMedic.Ambulance
             InitializeMainRtc();
             InitializeCam1Rtc();
             InitializeCam2Rtc();
+
+            _hl7 = new HL7Listener();
+            _hl7.OnMessageReceived += _hl7_OnMessageReceived;
+            _hl7.Start();
+        }
+
+        private void _hl7_OnMessageReceived(object sender, HL7MessageEventArgs e)
+        {
+            //e.Message.
         }
 
         private void ChatUC1_OnMessageSend(object sender, ChatMessageEventArgs e)
