@@ -53,20 +53,34 @@ namespace TeleMedic.Ambulance
             this.btnStart = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.chatUC1 = new TeleMedic.Library.ChatUC();
-            this.headerUC2 = new TeleMedic.Library.HeaderUC();
             this.panel5 = new System.Windows.Forms.Panel();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.headerUC4 = new TeleMedic.Library.HeaderUC();
+            this.headerUC3 = new TeleMedic.Library.HeaderUC();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.bingMap1 = new TeleMedic.Library.BingMap();
             this.headerUC1 = new TeleMedic.Library.HeaderUC();
             this.vitalHealthSmallUC1 = new TeleMedic.Library.VitalHealthSmallUC();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.headerUC3 = new TeleMedic.Library.HeaderUC();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.chatUC1 = new TeleMedic.Library.ChatUC();
+            this.headerUC2 = new TeleMedic.Library.HeaderUC();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -78,6 +92,8 @@ namespace TeleMedic.Ambulance
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -86,7 +102,7 @@ namespace TeleMedic.Ambulance
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(697, 248);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(801, 248);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -232,7 +248,7 @@ namespace TeleMedic.Ambulance
             // btnLeave
             // 
             this.btnLeave.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLeave.Location = new System.Drawing.Point(622, 0);
+            this.btnLeave.Location = new System.Drawing.Point(726, 0);
             this.btnLeave.Name = "btnLeave";
             this.btnLeave.Size = new System.Drawing.Size(75, 104);
             this.btnLeave.TabIndex = 4;
@@ -286,7 +302,7 @@ namespace TeleMedic.Ambulance
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.headerUC2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1199, 0);
+            this.panel4.Location = new System.Drawing.Point(1303, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(500, 925);
             this.panel4.TabIndex = 4;
@@ -299,24 +315,6 @@ namespace TeleMedic.Ambulance
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(498, 873);
             this.panel7.TabIndex = 22;
-            // 
-            // chatUC1
-            // 
-            this.chatUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chatUC1.Location = new System.Drawing.Point(0, 0);
-            this.chatUC1.Name = "chatUC1";
-            this.chatUC1.Padding = new System.Windows.Forms.Padding(5);
-            this.chatUC1.Size = new System.Drawing.Size(498, 873);
-            this.chatUC1.TabIndex = 0;
-            // 
-            // headerUC2
-            // 
-            this.headerUC2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerUC2.Location = new System.Drawing.Point(0, 0);
-            this.headerUC2.Name = "headerUC2";
-            this.headerUC2.Size = new System.Drawing.Size(498, 50);
-            this.headerUC2.TabIndex = 21;
-            this.headerUC2.Title = "Chat";
             // 
             // panel5
             // 
@@ -356,6 +354,153 @@ namespace TeleMedic.Ambulance
             this.panel3.Size = new System.Drawing.Size(498, 341);
             this.panel3.TabIndex = 21;
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Controls.Add(this.headerUC3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(500, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(803, 300);
+            this.panel6.TabIndex = 6;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.flowLayoutPanel1);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(0, 50);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(801, 248);
+            this.panel8.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.btnLeave);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.btnStart);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.btnCam1MuteVideo);
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.btnMuteAudio);
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.btnCam1UnmuteVideo);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.btnUnmuteAudio);
+            this.panel1.Controls.Add(this.btnStop);
+            this.panel1.Controls.Add(this.btnCam1StopVideo);
+            this.panel1.Controls.Add(this.btnUnmute);
+            this.panel1.Controls.Add(this.btnCam1MuteAudio);
+            this.panel1.Controls.Add(this.btnMute);
+            this.panel1.Controls.Add(this.btnCam1StartVideo);
+            this.panel1.Controls.Add(this.btnCam1UnMuteAudio);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(500, 819);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(803, 106);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.flowLayoutPanel2);
+            this.panel2.Controls.Add(this.panel9);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(500, 300);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(803, 519);
+            this.panel2.TabIndex = 10;
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.checkBox9);
+            this.panel9.Controls.Add(this.checkBox7);
+            this.panel9.Controls.Add(this.checkBox8);
+            this.panel9.Controls.Add(this.checkBox5);
+            this.panel9.Controls.Add(this.checkBox6);
+            this.panel9.Controls.Add(this.checkBox3);
+            this.panel9.Controls.Add(this.checkBox4);
+            this.panel9.Controls.Add(this.checkBox2);
+            this.panel9.Controls.Add(this.checkBox1);
+            this.panel9.Controls.Add(this.label2);
+            this.panel9.Controls.Add(this.label1);
+            this.panel9.Controls.Add(this.headerUC4);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(803, 247);
+            this.panel9.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 247);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(803, 272);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(24, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Name :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(105, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Ahmad Dani";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox1.Location = new System.Drawing.Point(19, 97);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(100, 50);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "MALE";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox2.Location = new System.Drawing.Point(125, 97);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(100, 50);
+            this.checkBox2.TabIndex = 4;
+            this.checkBox2.Text = "FEMALE";
+            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // headerUC4
+            // 
+            this.headerUC4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerUC4.Location = new System.Drawing.Point(0, 0);
+            this.headerUC4.Name = "headerUC4";
+            this.headerUC4.Size = new System.Drawing.Size(801, 50);
+            this.headerUC4.TabIndex = 0;
+            this.headerUC4.Title = "Patient Info";
+            // 
+            // headerUC3
+            // 
+            this.headerUC3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerUC3.Location = new System.Drawing.Point(0, 0);
+            this.headerUC3.Name = "headerUC3";
+            this.headerUC3.Size = new System.Drawing.Size(801, 50);
+            this.headerUC3.TabIndex = 21;
+            this.headerUC3.Title = "Camera";
+            // 
             // elementHost1
             // 
             this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -384,70 +529,100 @@ namespace TeleMedic.Ambulance
             this.vitalHealthSmallUC1.Size = new System.Drawing.Size(498, 526);
             this.vitalHealthSmallUC1.TabIndex = 0;
             // 
-            // panel6
+            // chatUC1
             // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Controls.Add(this.headerUC3);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(500, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(699, 300);
-            this.panel6.TabIndex = 6;
+            this.chatUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chatUC1.Location = new System.Drawing.Point(0, 0);
+            this.chatUC1.Name = "chatUC1";
+            this.chatUC1.Padding = new System.Windows.Forms.Padding(5);
+            this.chatUC1.Size = new System.Drawing.Size(498, 873);
+            this.chatUC1.TabIndex = 0;
             // 
-            // panel8
+            // headerUC2
             // 
-            this.panel8.Controls.Add(this.flowLayoutPanel1);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 50);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(697, 248);
-            this.panel8.TabIndex = 22;
+            this.headerUC2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerUC2.Location = new System.Drawing.Point(0, 0);
+            this.headerUC2.Name = "headerUC2";
+            this.headerUC2.Size = new System.Drawing.Size(498, 50);
+            this.headerUC2.TabIndex = 21;
+            this.headerUC2.Title = "Chat";
             // 
-            // headerUC3
+            // checkBox3
             // 
-            this.headerUC3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerUC3.Location = new System.Drawing.Point(0, 0);
-            this.headerUC3.Name = "headerUC3";
-            this.headerUC3.Size = new System.Drawing.Size(697, 50);
-            this.headerUC3.TabIndex = 21;
-            this.headerUC3.Title = "Camera";
+            this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox3.Location = new System.Drawing.Point(126, 165);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(100, 50);
+            this.checkBox3.TabIndex = 6;
+            this.checkBox3.Text = "100 DAYS TO 3 YEARS";
+            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // checkBox4
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.btnLeave);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.btnStart);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.btnCam1MuteVideo);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.btnMuteAudio);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.btnCam1UnmuteVideo);
-            this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.btnUnmuteAudio);
-            this.panel1.Controls.Add(this.btnStop);
-            this.panel1.Controls.Add(this.btnCam1StopVideo);
-            this.panel1.Controls.Add(this.btnUnmute);
-            this.panel1.Controls.Add(this.btnCam1MuteAudio);
-            this.panel1.Controls.Add(this.btnMute);
-            this.panel1.Controls.Add(this.btnCam1StartVideo);
-            this.panel1.Controls.Add(this.btnCam1UnMuteAudio);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(500, 819);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(699, 106);
-            this.panel1.TabIndex = 9;
+            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox4.Location = new System.Drawing.Point(20, 165);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(100, 50);
+            this.checkBox4.TabIndex = 5;
+            this.checkBox4.Text = "UNDER 100 DAYS";
+            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // checkBox5
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(500, 300);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(699, 519);
-            this.panel2.TabIndex = 10;
+            this.checkBox5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox5.Location = new System.Drawing.Point(338, 165);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(100, 50);
+            this.checkBox5.TabIndex = 8;
+            this.checkBox5.Text = "7 TO 17 YEARS";
+            this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox6.Location = new System.Drawing.Point(232, 165);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(100, 50);
+            this.checkBox6.TabIndex = 7;
+            this.checkBox6.Text = "4 TO 6 YEARS";
+            this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox7.Location = new System.Drawing.Point(550, 165);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(100, 50);
+            this.checkBox7.TabIndex = 10;
+            this.checkBox7.Text = "40 TO 59 YEARS";
+            this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox8.Location = new System.Drawing.Point(444, 165);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(100, 50);
+            this.checkBox8.TabIndex = 9;
+            this.checkBox8.Text = "18 TO 39 YEARS";
+            this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox9.Location = new System.Drawing.Point(656, 165);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(100, 50);
+            this.checkBox9.TabIndex = 11;
+            this.checkBox9.Text = "OVER 60 YEARS";
+            this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // DashboardUC
             // 
@@ -459,7 +634,7 @@ namespace TeleMedic.Ambulance
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Name = "DashboardUC";
-            this.Size = new System.Drawing.Size(1699, 925);
+            this.Size = new System.Drawing.Size(1803, 925);
             this.panel4.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -471,6 +646,9 @@ namespace TeleMedic.Ambulance
             this.panel6.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -513,5 +691,19 @@ namespace TeleMedic.Ambulance
         private Library.HeaderUC headerUC2;
         private System.Windows.Forms.Panel panel8;
         private Library.HeaderUC headerUC3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Panel panel9;
+        private Library.HeaderUC headerUC4;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }
