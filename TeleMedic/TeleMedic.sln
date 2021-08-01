@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic", "TeleMedic\TeleMedic.csproj", "{35E71073-62B8-4419-B5E5-67C48659FE8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic.Ambulance", "TeleMedic.Ambulance\TeleMedic.Ambulance.csproj", "{88540DC2-ECC1-4690-9163-596A91A31450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic.Core", "TeleMedic.Core\TeleMedic.Core.csproj", "{FC23840C-91C2-4803-9ACF-C077B1DF1535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleMedic.Library", "TeleMedic.Library\TeleMedic.Library.csproj", "{CFF948FA-4218-4FC9-80C2-293839BCA1F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Debug|x86.Build.0 = Debug|Any CPU
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Release|x86.ActiveCfg = Release|Any CPU
+		{35E71073-62B8-4419-B5E5-67C48659FE8A}.Release|x86.Build.0 = Release|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Debug|x86.Build.0 = Debug|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Release|x86.ActiveCfg = Release|Any CPU
+		{88540DC2-ECC1-4690-9163-596A91A31450}.Release|x86.Build.0 = Release|Any CPU
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|x86.ActiveCfg = Debug|Win32
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Debug|x86.Build.0 = Debug|Win32
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|x86.ActiveCfg = Release|Win32
+		{FC23840C-91C2-4803-9ACF-C077B1DF1535}.Release|x86.Build.0 = Release|Win32
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Debug|x86.Build.0 = Debug|Any CPU
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFF948FA-4218-4FC9-80C2-293839BCA1F1}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7815B138-7F51-45D2-B7D2-5B2EB06231ED}
+	EndGlobalSection
+EndGlobal
